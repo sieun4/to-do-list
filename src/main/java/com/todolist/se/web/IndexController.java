@@ -12,4 +12,11 @@ public class IndexController {
     return "hello :D";
   }
 
+  @GetMapping("/home.do")
+  public ModelAndView home() {
+    ModelAndView mv = new ModelAndView();
+    mv.setViewName("home");
+    return mv;
+  }
+
 }
