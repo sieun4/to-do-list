@@ -1,5 +1,6 @@
 package com.todolist.se.domain.posts;
 
+import com.todolist.se.domain.BaseTimeEntity;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -12,7 +13,7 @@ import lombok.NoArgsConstructor;
 @Getter             // Lombok - Getter 추가
 @NoArgsConstructor  // Lombok - 생성자 추가
 @Entity             // JPA - 테이블과 연결
-public class Posts {
+public class Posts extends BaseTimeEntity {
 
   @Id   // PK
   @GeneratedValue(strategy = GenerationType.IDENTITY) // PK 생성 규칙
