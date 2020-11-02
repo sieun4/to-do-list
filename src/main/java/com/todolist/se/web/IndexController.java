@@ -1,22 +1,19 @@
 package com.todolist.se.web;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.servlet.ModelAndView;
 
-@RestController
+@Controller
 public class IndexController {
 
   @GetMapping("/index.do")
   public String index(){
-    return "hello :D";
+    return "index";
   }
 
-  @GetMapping("/home.do")
-  public ModelAndView home() {
-    ModelAndView mv = new ModelAndView();
-    mv.setViewName("home");
-    return mv;
+  @GetMapping("/posts/save")
+  public String postsSave(){
+    return "posts-save";
   }
 
 }

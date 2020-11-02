@@ -25,7 +25,10 @@ repositories {
 }
 
 dependencies {
-    compile('org.springframework.boot:spring-boot-starter-web')
+    compile('org.springframework.boot:spring-boot-starter-web')            // spring boot
     testCompile('org.springframework.boot:spring-boot-starter-test')
-    compile('org.springframework.boot:spring-boot-starter-mustache')
+    compile('org.springframework.boot:spring-boot-starter-mustache')       // mustache
+    compile('org.projectlombok:lombok')                                    // lombok
+    compile('org.springframework.boot:spring-boot-starter-data-jpa')      // spring data jpa
+    compile('com.h2database:h2')                                           // h2
 }
