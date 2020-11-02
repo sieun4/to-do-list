@@ -29,6 +29,7 @@ dependencies {
     testCompile('org.springframework.boot:spring-boot-starter-test')
     compile('org.springframework.boot:spring-boot-starter-mustache')       // mustache
     compile('org.projectlombok:lombok')                                    // lombok
-    compile('org.springframework.boot:spring-boot-starter-data-jpa')      // spring data jpa
+    annotationProcessor('org.projectlombok:lombok')                        // 추가해야하는 것인가???
+    compile('org.springframework.boot:spring-boot-starter-data-jpa')       // spring data jpa
     compile('com.h2database:h2')                                           // h2
 }
